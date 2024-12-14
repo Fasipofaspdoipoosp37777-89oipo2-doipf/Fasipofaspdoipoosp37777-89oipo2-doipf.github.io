@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIAN | Buscar Documento</title>
+    <meta name="description" content="dian">
+    <meta name="keywords" content="dian">
+    <meta name="author" content="Gosocket Corp SpA">
+    <link rel="shortcut icon" href="https://catalogo-vpfe.dian.gov.co/Content/img/favicon_dian.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://catalogo-vpfe.dian.gov.co/Content/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://catalogo-vpfe.dian.gov.co/Content/css/nifty.min.css">
+    <link rel="stylesheet" href="https://catalogo-vpfe.dian.gov.co/Content/css/login.css?v=1.0.6">
+    <link rel="stylesheet" href="https://catalogo-vpfe.dian.gov.co/Content/css/login-new-styles.css">
+    <link rel="stylesheet" href="https://catalogo-vpfe.dian.gov.co/Content/css/app-new-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header-gov" style="display: flex; align-items: center; height: 48px; background: #3366CC; padding-left: 62px;">
+        <img src="https://catalogo-vpfe.dian.gov.co/Content/img/Gov.co.png" height="21" alt="Gov.co">
+    </div>
+    <div class="header-logo" style="display: flex; align-items: center; justify-content: space-between; height: 107px; background: #fff; padding: 0 50px; border-bottom: 2px solid #0DB4DC;">
+        <div style="display: flex; align-items: center;">
+            <img src="https://catalogo-vpfe.dian.gov.co/Content/img/Sistema_Facturacion_Logo.png" height="40" alt="Sistema Facturación">
+            <div style="display: inline-block; height: 40px; width: 1px; background: #A6ADB4; margin: 0 29px;"></div>
+            <a href="/">
+                <img src="https://catalogo-vpfe.dian.gov.co/Content/img/Dian_logo_sin_texto.jpg" height="40" alt="DIAN">
+            </a>
+        </div>
+        <span class="header-title" style="font-weight: bold; font-size: 16px;"></span>
+        <img src="https://catalogo-vpfe.dian.gov.co/Content/img/Minhacienda_Logo_blanco.png" height="40" alt="Minhacienda">
+    </div>
+
+    <!-- Main Content -->
+    <div class="login-wrapper">
+        <div class="bhoechie-tab-menu">
+            <div class="list-group text-center">
+                <a href="/User/Login" class="list-group-item">
+                    <img src="https://catalogo-vpfe.dian.gov.co/Content/img/login-icons/Administrator.svg" alt="Administrador"><br>Administrador
+                </a>
+                <a href="/User/CompanyLogin" class="list-group-item">
+                    <img src="https://catalogo-vpfe.dian.gov.co/Content/img/login-icons/Company.svg" alt="Empresa"><br>Empresa
+                </a>
+                <a href="/User/PersonLogin" class="list-group-item">
+                    <img src="https://catalogo-vpfe.dian.gov.co/Content/img/login-icons/Person.svg" alt="Persona"><br>Persona
+                </a>
+                <a href="/User/NotObligedInvoice" class="list-group-item">
+                    <img src="https://catalogo-vpfe.dian.gov.co/Content/img/login-icons/NotObligued.svg" alt="No Facturador"><br>No Facturador
+                </a>
+                <a href="#" class="list-group-item certificate-login-link">
+                    <img src="https://catalogo-vpfe.dian.gov.co/Content/img/login-icons/Certificate.svg" alt="Certificado"><br>Certificado
+                </a>
+                <a href="#" class="list-group-item active">
+                    <img src="https://catalogo-vpfe.dian.gov.co/Content/img/login-icons/SearchDocument.svg" alt="Buscar Documento"><br>Buscar Documento
+                </a>
+            </div>
+        </div>
+
+        <div class="bhoechie-tab-content active">
+            <h2 class="sub-title">Buscar documento</h2>
+            <p>Por favor diligencia los siguientes datos:</p>
+            <form id="search-document-form" method="post" action="/User/SearchDocument">
+                <div class="form-group">
+                    <label for="DocumentKey">CUFE o UUID</label>
+                    <input type="text" id="DocumentKey" name="DocumentKey" class="form-control" placeholder="90a0ff39175bfec0735a8963d4634c2da60bdc9f36659647d6ad363574d7ebe1adea5ee34e3a19c7019fba066ba0d577" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Buscar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background: #3366CC; padding: 40px; color: #fff; font-family: 'Work Sans';">
+        <div class="row">
+            <div class="col-sm-4 text-center">
+                <img src="https://catalogo-vpfe.dian.gov.co/Content/img/Gov.co.png" height="21" alt="Gov.co">
+                <img src="https://catalogo-vpfe.dian.gov.co/Content/img/colombia_marca.png" height="48" style="display: block; margin-top: 12px;" alt="Colombia Marca">
+            </div>
+            <div class="col-sm-4">
+                <p><strong>Dirección de Impuestos y Aduanas Nacionales</strong></p>
+                <p>Dirección: Sede principal | Bogotá, Nivel Central, carrera 8 Nº 6C - 38 Edificio San Agustín</p>
+                <p>Código Postal: 111711</p>
+                <p>Horario Contact Center: Lunes a Viernes 8:00 a.m. a 7:00 p.m. y Sábados de 8:00 a.m. a 12:00 m</p>
+            </div>
+            <div class="col-sm-4">
+                <p>Redes Sociales:</p>
+                <a href="#"><img src="https://catalogo-vpfe.dian.gov.co/Content/img/social-icons/Twitter.svg" alt="Twitter" style="height: 35px;"></a>
+                <a href="#"><img src="https://catalogo-vpfe.dian.gov.co/Content/img/social-icons/YouTube.svg" alt="YouTube" style="height: 35px;"></a>
+                <a href="#"><img src="https://catalogo-vpfe.dian.gov.co/Content/img/social-icons/LinkedIn.svg" alt="LinkedIn" style="height: 35px;"></a>
+                <a href="#"><img src="https://catalogo-vpfe.dian.gov.co/Content/img/social-icons/Facebook.svg" alt="Facebook" style="height: 35px;"></a>
+                <a href="#"><img src="https://catalogo-vpfe.dian.gov.co/Content/img/social-icons/Instagram.svg" alt="Instagram" style="height: 35px;"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
